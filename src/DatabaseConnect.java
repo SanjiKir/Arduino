@@ -13,17 +13,18 @@ public class DatabaseConnect {
         public void databaseSetup(){
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "19219292");
+//            connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "19219292");
 
-        } catch (SQLException e) {
+        } /* catch (SQLException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } */
+        catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
         }
         public void insertDatBaseValues(int id, int value){
-
+/*
             String sqlQuery = "INSERT INTO MOVEMENTINFO VALUES (" + id +"," + "CURRENT_TIMESTAMP," + value +")";
             try {
                 statement = connection.createStatement();
@@ -31,6 +32,7 @@ public class DatabaseConnect {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            */
         }
 
 
@@ -38,6 +40,7 @@ public class DatabaseConnect {
      * @param
      */
     public void getDatabaseValue(){
+        /*
             String sqlQuery = "select * from MOVEMENTINFO";
             ResultSet rs = null;
 
@@ -54,9 +57,11 @@ public class DatabaseConnect {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+            */
         }
 
         public int getLastKeyValue(){
+        /*
             String sqlQuery = "SELECT COUNT(*) FROM MOVEMENTINFO";
             ResultSet rs = null;
             int value = 0 ;
@@ -69,7 +74,10 @@ public class DatabaseConnect {
                 e.printStackTrace();
             }
             return value;
+            */
+            return 0;
         }
+
 
         }
 

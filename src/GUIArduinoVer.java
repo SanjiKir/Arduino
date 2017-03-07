@@ -2,6 +2,7 @@ import com.fazecast.jSerialComm.SerialPort;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
@@ -72,7 +73,7 @@ public class GUIArduinoVer {
         // create the line graph
         series = new XYSeries("Movement Sensor Readings");
         XYSeriesCollection dataset = new XYSeriesCollection(series);
-        JFreeChart chart = ChartFactory.createXYLineChart("Movement Sensor Readings", "Time (seconds)", "ADC Reading", dataset);
+        JFreeChart chart = ChartFactory.createXYLineChart("Movement Sensor Readings", "Time (seconds)", "ADC Reading", dataset, PlotOrientation.VERTICAL, false,false, false);
         window.add(new ChartPanel(chart), BorderLayout.CENTER);
 
         // create the TextArea for arduino text outputs

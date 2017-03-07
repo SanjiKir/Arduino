@@ -1,9 +1,7 @@
 <component name="libraryTable">
-  <library name="jSerialComm-1.3.11">
+  <library name="jSerialComm-1.3.111">
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/jSerialComm-1.3.11.jar!/" />
-      <root url="jar://D:/jfreechart-1.0.19.jar!/" />
-      <root url="jar://D:/jcommon-1.0.23.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
