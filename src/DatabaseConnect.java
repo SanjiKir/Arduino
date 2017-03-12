@@ -13,7 +13,7 @@ public class DatabaseConnect {
         public void databaseSetup(){
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-//            connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "19219292");
+//            connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "sys", "asdasdasd");
 
         } /* catch (SQLException e) {
             e.printStackTrace();
